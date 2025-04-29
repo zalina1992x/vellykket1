@@ -21,13 +21,22 @@
       }
     }
   }
+
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 1; /* Treść normalnie nad wideo */
+  }
+  
   .main-hero-area {
-    background-image: url(../../img/all-images/bg/bg2.png);
+    background-image: url(../../img/all-images/bg/bg15.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
+  
+
   .site-logo {
     img {
         filter: brightness(0);
