@@ -10,15 +10,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-  
+   
     @media #{$xs} {
       background-image: url('../../img/all-images/bg/bg17.png');
-      background-attachment: scroll;
+      background-attachment: scroll !important; // tło przewija się razem ze stroną
       background-size: cover;
       background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding: 160px 25px 25px 25px;
+      background-repeat: no-repeat;
+      
+      padding: 160px 25px 25px 25px;
 
     }
   
