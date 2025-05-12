@@ -1231,7 +1231,7 @@ Location:
 
 /*============= SERVICE CSS AREA ENDS===============*/
 /*============= HERO CSS AREA ===============*/
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
 .main-hero-area {
   position: relative;
   z-index: 1;
@@ -3775,7 +3775,7 @@ Location:
 .light-mode .vl-btn1:hover img {
   filter: none;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
 .light-mode .main-hero-area {
   background-image: url(../img/all-images/bg/bg16.png);
   background-position: center;
