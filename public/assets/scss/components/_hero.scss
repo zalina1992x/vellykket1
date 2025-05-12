@@ -13,7 +13,14 @@
     @media #{$xxxl} {
         padding: 120px 0 50px;
     }
-
+    .main-hero-area {
+        background-image: url('../../img/all-images/bg/bg1.png');
+      
+        @media #{$xs} {
+          background-image: url('../../img/all-images/bg/bg17.png');
+          background-attachment: scroll; // lepiej dla mobile
+        }
+      }
     @media #{$xxl} {
         padding: 100px 0 50px;
     }
