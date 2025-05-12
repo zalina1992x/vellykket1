@@ -1231,6 +1231,7 @@ Location:
 
 /*============= SERVICE CSS AREA ENDS===============*/
 /*============= HERO CSS AREA ===============*/
+@media only screen and (min-width: 1400px) {
 .main-hero-area {
   position: relative;
   z-index: 1;
@@ -1240,6 +1241,19 @@ Location:
   background-repeat: no-repeat; 
   background-size: cover;
   background-attachment: fixed;
+}
+}
+@media (max-width: 767px) { 
+  .main-hero-area {
+    position: relative;
+    z-index: 1;
+    padding: 160px 0 50px;
+    background-image: url(../img/all-images/bg/bg17.png);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 @media only screen and (min-width: 1600px) and (max-width: 1700px) {
   .main-hero-area {
@@ -3761,6 +3775,7 @@ Location:
 .light-mode .vl-btn1:hover img {
   filter: none;
 }
+@media only screen and (min-width: 1400px) {
 .light-mode .main-hero-area {
   background-image: url(../img/all-images/bg/bg16.png);
   background-position: center;
@@ -3768,6 +3783,16 @@ Location:
   background-size: cover;
   background-attachment: fixed;
 }
+}
+@media (max-width: 767px) { 
+  .light-mode .main-hero-area {
+    background-image: url(../img/all-images/bg/bg17.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  }
 .light-mode .site-logo img {
   filter: brightness(0);
 }
