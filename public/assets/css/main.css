@@ -1243,7 +1243,7 @@ Location:
   background-attachment: fixed;
 }
 }
-@media (max-width: 767px) { 
+@media (max-width: 900px) { 
   .main-hero-area {
     position: relative;
     z-index: 1;
@@ -3784,7 +3784,7 @@ Location:
   background-attachment: fixed;
 }
 }
-@media (max-width: 767px) { 
+@media (max-width: 900px) { 
   .light-mode .main-hero-area {
     background-image: url(../img/all-images/bg/bg17.png);
     background-position: center;
