@@ -5,25 +5,28 @@
     position: relative;
     z-index: 1;
     padding: 160px 0 50px;
-    background-image: url(../../img/all-images/bg/bg1.png);
+    background-image: url('../../img/all-images/bg/bg1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+  
+    @media #{$xs} {
+      background-image: url('../../img/all-images/bg/bg17.png');
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  
     @media #{$xxxl} {
-        padding: 120px 0 50px;
+      padding: 120px 0 50px;
     }
-    .main-hero-area {
-        background-image: url('../../img/all-images/bg/bg1.png');
-      
-        @media #{$xs} {
-          background-image: url('../../img/all-images/bg/bg17.png');
-          background-attachment: scroll; // lepiej dla mobile
-        }
-      }
+  
     @media #{$xxl} {
-        padding: 100px 0 50px;
+      padding: 100px 0 50px;
     }
+  
+    // reszta kodu
+  }
     .list-group {
         position: absolute;
         left: -100px;
@@ -348,7 +351,7 @@
             }
         }
     }
-}
+
 
 // Homepage 02 //
 .main-hero-area2 {
