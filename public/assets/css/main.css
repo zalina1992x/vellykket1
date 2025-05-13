@@ -1231,29 +1231,15 @@ Location:
 
 /*============= SERVICE CSS AREA ENDS===============*/
 /*============= HERO CSS AREA ===============*/
-@media only screen and (min-width: 1024px) {
 .main-hero-area {
   position: relative;
   z-index: 1;
   padding: 160px 0 50px;
-  background-image: url(../img/all-images/bg/bg16.png);
+  background-image: url(../img/all-images/bg/bg1.png);
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-}
-@media only screen and (max-width: 1023px) {
-  .main-hero-area {
-    position: relative;
-    z-index: 1;
-    padding: 160px 0 50px;
-    background-image: url(../img/all-images/bg/bg17.png);
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-attachment: fixed;
-  }
 }
 @media only screen and (min-width: 1600px) and (max-width: 1700px) {
   .main-hero-area {
@@ -3775,24 +3761,13 @@ Location:
 .light-mode .vl-btn1:hover img {
   filter: none;
 }
-@media only screen and (min-width: 1024px) {
 .light-mode .main-hero-area {
-  background-image: url(../img/all-images/bg/bg16.png);
+  background-image: url(../img/all-images/bg/bg2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-}
-@media only screen and (max-width: 1023px) {
-  .light-mode .main-hero-area {
-    background-image: url(../img/all-images/bg/bg17.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  }
 .light-mode .site-logo img {
   filter: brightness(0);
 }
