@@ -646,48 +646,54 @@
                                         <div class="contact-boxarea" data-aos="zoom-in" data-aos-duration="1000">
                                             <h3>Fra idé til Vellykket</h3>
                                             <div class="space12"></div>
-                                            <div class="row">
+                                          
+                                            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                                              <input type="hidden" name="access_key" value="1d991000-0893-4737-a8cc-2f2a0989551f" />
+                                          
+                                              <div class="row">
                                                 <div class="col-lg-6 col-md-6">
-                                                    <div class="input-area">
-                                                        <input type="text" placeholder="Navn">
-                                                    </div>
+                                                  <div class="input-area">
+                                                    <input type="text" name="name" placeholder="Navn" required />
+                                                  </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-6">
-                                                    <div class="input-area">
-                                                        <input type="email" placeholder="E-post">
-                                                    </div>
+                                                  <div class="input-area">
+                                                    <input type="email" name="email" placeholder="E-post" required />
+                                                  </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-6">
-                                                    <div class="input-area">
-                                                        <input type="number" placeholder="Tlf">
-                                                    </div>
+                                                  <div class="input-area">
+                                                    <input type="tel" name="phone" placeholder="Tlf" required />
+                                                  </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-6">
-                                                    <div class="input-area">
-                                                        <input type="text" placeholder="Tema">
-                                                    </div>
+                                                  <div class="input-area">
+                                                    <input type="text" name="subject" placeholder="Tema" required />
+                                                  </div>
                                                 </div>
-
                                                 <div class="col-lg-12">
-                                                    <div class="input-area">
-                                                        <input type="text" placeholder="Nøkkelord (valgfritt)">
-                                                    </div>
+                                                  <div class="input-area">
+                                                    <input type="text" name="keywords" placeholder="Nøkkelord (valgfritt)" />
+                                                  </div>
                                                 </div>
-
                                                 <div class="col-lg-12">
-                                                    <div class="input-area">
-                                                        <textarea placeholder="Melding"></textarea>
-                                                    </div>
+                                                  <div class="input-area">
+                                                    <textarea name="message" placeholder="Melding" required></textarea>
+                                                  </div>
                                                 </div>
-
                                                 <div class="col-lg-12">
-                                                    <div class="input-area">
-                                                        <button type="submit" class="vl-btn1">Send <img
-                                                                src="assets/img/icons/mail1.svg" alt=""></button>
-                                                    </div>
+                                                  <div class="input-area">
+                                                    <button type="submit" class="vl-btn1">Send <img src="assets/img/icons/mail1.svg" alt="" /></button>
+                                                  </div>
                                                 </div>
+                                              </div>
+                                            </form>
+                                          
+                                            <div id="formMessage" style="display:none; color:green; margin-top: 1rem;">
+                                              ✅ Takk for meldingen! Vi tar kontakt så snart som mulig.
                                             </div>
-                                        </div>
+                                          </div>
+                                          
                                     </div>
 
                                     <div class="col-lg-12">
