@@ -5,7 +5,7 @@ import { TopbarComponent } from "../../layout/components/topbar/topbar.component
 @Component({
   selector: 'app-blog-single',
   imports: [GsapRevealDirective, TopbarComponent],
-  templateUrl: './blog-single.component.html',
+  templateUrl: './blog-single1.component.html',
   styles: ``
 })
 export class BlogSingleComponent {
