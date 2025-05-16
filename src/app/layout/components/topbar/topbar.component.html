@@ -73,11 +73,16 @@
                   <span class="slider">
                     <i class="fas fa-moon icon moon-icon"></i>
                     <i class="fas fa-sun icon sun-icon"></i>
+                    <span class="explosion"></span> <!-- 🔥 Dodane -->
                   </span>
                 </label>
               </div>
-              <a routerLink="https://vellykket.no/index#kontakt" class="vl-btn1">KONTAKT <span><img src="assets/img/icons/mail1.svg"
-                    alt=""></span></a>
+              <a class="vl-btn1"
+   [ngxScrollTo]="'#list-item-8'"
+   href="javascript:void(0);"
+   (click)="setActiveLink('list-item-8')">
+  KONTAKT <span><img src="assets/img/icons/mail1.svg" alt=""></span>
+</a>
               <button (click)="toggleSidebar()" class="hamburger_menu"><img src="assets/img/icons/bars-icons1.svg" alt=""></button>
             </div>
           </div>

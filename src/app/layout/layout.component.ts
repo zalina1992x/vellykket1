@@ -17,7 +17,7 @@ export class LayoutComponent implements AfterViewInit {
     const magnetics = this.el.nativeElement.querySelectorAll('.magnetic');
 
     document.addEventListener('mousemove', (e: MouseEvent) => {
-      magnetics.forEach((el) => {
+      magnetics.forEach((el: HTMLElement) => {
         const magnetic = el as HTMLElement;
         const rect = magnetic.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
