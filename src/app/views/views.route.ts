@@ -8,7 +8,7 @@ import { Index6Component } from "./index6/index6.component";
 import { Index7Component } from "./index7/index7.component";
 import { PreviewComponent } from "./preview/preview.component";
 import { BlogSingleComponent } from "./blog-single/blog-single.component";
-import { BlogSingle1Component } from "./blog-single/blog-single1.component";
+import { BlogSingle1Component } from "./blog-single/blog-singlee.component";
 
 export const VIEWS_ROUTE: Route[] = [
     {

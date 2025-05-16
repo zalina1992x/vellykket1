@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import { PreviewComponent } from './views/preview/preview.component';
 import { BlogSingleComponent } from './views/blog-single/blog-single.component';
+import { BlogSingleComponent } from './views/blog-single/blog-singlee.component';
 
 export const routes: Routes = [
     {
@@ -23,5 +24,9 @@ export const routes: Routes = [
       path: 'blog-single',
       component: BlogSingleComponent
   },
+  {
+    path: 'blog-single1',
+    component: BlogSingleComponent
+},
   
 ];
