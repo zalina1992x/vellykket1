@@ -1,50 +1,40 @@
 import { AfterViewInit, Component, ElementRef } from '@angular/core';
-import { SidebarComponent } from "./components/sidebar/sidebar.component";
-import { TopbarComponent } from "./components/topbar/topbar.component";
-import { RouterOutlet } from '@angular/router';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
   imports: [TopbarComponent, SidebarComponent],
   templateUrl: './layout.component.html',
-  styles: [`
-    #siteLogo {
-      animation: pulse 2.5s ease-in-out infinite;
-      transform-origin: center;
-      display: inline-block;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.05); opacity: 0.85; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-  `]
+  styles: ``
 })
 export class LayoutComponent implements AfterViewInit {
 
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit(): void {
-    const logo = this.el.nativeElement.querySelector('#siteLogo');
-    if (logo) {
-      // Początkowa animacja wejścia logo
-      logo.style.opacity = '0';
-      logo.style.transform = 'scale(0.7) rotate(-10deg)';
-      setTimeout(() => {
-        logo.style.transition = 'all 0.8s ease';
-        logo.style.opacity = '1';
-        logo.style.transform = 'scale(1) rotate(0deg)';
-      }, 100);
+    const magnetics = this.el.nativeElement.querySelectorAll('.magnetic');
 
-      // Efekty hover
-      logo.addEventListener('mouseenter', () => {
-        logo.style.transform = 'scale(1.1)';
+    document.addEventListener('mousemove', (e: MouseEvent) => {
+      magnetics.forEach((el) => {
+        const magnetic = el as HTMLElement;
+        const rect = magnetic.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const distX = e.clientX - centerX;
+        const distY = e.clientY - centerY;
+        const distance = Math.sqrt(distX ** 2 + distY ** 2);
+
+        const threshold = 300; // większy zasięg
+        if (distance < threshold) {
+          const strength = 1 - distance / threshold;
+          magnetic.style.transform = `translate(${distX * 0.25 * strength}px, ${distY * 0.25 * strength}px)`;
+        } else {
+          magnetic.style.transform = 'translate(0, 0)';
+        }
       });
-      logo.addEventListener('mouseleave', () => {
-        logo.style.transform = 'scale(1)';
-      });
-    }
+    });
   }
 }

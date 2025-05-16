@@ -945,6 +945,11 @@ Location:
 .animated-logo:hover {
   transform: scale(1.05) rotate(2deg);
 }
+.magnetic {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
 #siteLogo {
   display: inline-block;
   transition: all 0.3s ease;
