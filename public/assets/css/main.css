@@ -935,7 +935,32 @@ Location:
     margin-bottom: 30px;
   }
 }
+.animated-logo {
+  animation: pulse 4s infinite ease-in-out;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.1));
+}
 
+.animated-logo:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+#siteLogo {
+  display: inline-block;
+  transition: all 0.3s ease;
+  will-change: transform;
+  cursor: pointer;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.95;
+  }
+}
 /*============= ABOUT CSS AREA ===============*/
 .about-section-area .about-boxarea .about-main-boxes {
   position: relative;
