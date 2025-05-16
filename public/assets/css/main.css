@@ -1029,6 +1029,19 @@ Location:
   line-height: 26px; /* 100% */
   opacity: 80%;
 }
+.themed-text {
+  transition: color 0.3s ease-in-out;
+}
+
+/* domyślnie – dla ciemnego motywu (brak klasy light-mode) */
+body:not(.light-mode) .themed-text {
+  color: white;
+}
+
+/* dla jasnego motywu */
+body.light-mode .themed-text {
+  color: #222; /* lub inny ciemny odcień */
+}
 .about-section-area .about-boxarea h3 {
   color: var(--ztc-text-text-1);
   font-family: var(--ztc-family-font1);
