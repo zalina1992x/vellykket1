@@ -14,30 +14,27 @@
           <div class="sidebar-content">
               <ul>
                   <li><a [ngClass]="{ active: currentSection === 'list-item-1' }" [ngxScrollTo]="'#list-item-1'"
-                          href="javascript:void(0);" (click)="setActiveLink('list-item-1')"> Hjem</a></li>
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-1')"> Hjem</a></li>
                   <li> <a [ngxScrollTo]="'#list-item-2'" [ngClass]="{ active: currentSection === 'list-item-2' }"
-                          href="javascript:void(0);" (click)="setActiveLink('list-item-2')">Om oss</a></li>
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-2')">Om oss</a></li>
                   <li> <a [ngClass]="{ active: currentSection === 'list-item-3' }" [ngxScrollTo]="'#list-item-3'"
-                          href="javascript:void(0);" (click)="setActiveLink('list-item-3')">Tjenester</a></li>
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-3')">Tjenester</a></li>
                   <li> <a [ngClass]="{ active: currentSection === 'list-item-4' }" [ngxScrollTo]="'#list-item-4'"
-                          href="javascript:void(0);" (click)="setActiveLink('list-item-4')">Fordeler</a></li>
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-4')">Fordeler</a></li>
                   <li> <a [ngClass]="{ active: currentSection === 'list-item-5' }" [ngxScrollTo]="'#list-item-5'"
-                          href="javascript:void(0);" (click)="setActiveLink('list-item-5')">Google Rangering-live</a></li>
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-5')">Google Rangering-live</a></li>
                   <li> <a [ngClass]="{ active: currentSection === 'list-item-6' }" [ngxScrollTo]="'#list-item-6'"
-                          href="javascript:void(0);" (click)="setActiveLink('list-item-6')">Referanser</a></li>
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-6')">Referanser</a></li>
                   <li><a [ngClass]="{ active: currentSection === 'list-item-7' }" [ngxScrollTo]="'#list-item-7'"
-                          href="javascript:void(0);" (click)="setActiveLink('list-item-7')">Blogg</a></li>
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-7')">Blogg</a></li>
                   <li> <a [ngClass]="{ active: currentSection === 'https://vellykket.no/index#kontakt' }" [ngxScrollTo]="'#list-item-8'"
-                          href="javascript:void(0);" (click)="setActiveLink('https://vellykket.no/index#kontakt')">Kontakt</a></li>
+                          href="javascript:void(0);" (click)="handleNavClick('list-item-8')">Kontakt</a></li>
               </ul>
           </div>
           <div class="space32"></div>
           <div class="space16"></div>
-          <div class="btn-area">
-              <a href="contact.html" class="vl-btn1">Kontakt oss <img src="assets/img/icons/mail1.svg"
-                      alt=""></a>
-          </div>
-          <div class="space40"></div>
+          
+          
           <div class="social-link-area">
               <h3 class="sidebar-heading">Sosiale medier</h3>
               <ul>

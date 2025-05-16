@@ -41,7 +41,11 @@ export class TopbarComponent {
   setActiveLink(link: string): void {
     this.currentSection = link
   }
-
+// 👇 Dodaj tę nową metodę:
+handleNavClick(link: string): void {
+  this.setActiveLink(link);
+  this.closeSidebar(); // automatycznie zamyka menu po kliknięciu w link
+}
 
   toggleSidebar() {
     this.isSidebarVisible = !this.isSidebarVisible;
