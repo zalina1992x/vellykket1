@@ -1020,6 +1020,18 @@ Location:
   font-weight: var(--ztc-weight-semibold);
   line-height: 20px; /* 100% */
 }
+.glass-text-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 12px 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 400px;
+  margin: 0 auto;
+  color: #fff; /* lub dynamiczny kolor zależny od motywu */
+}
+
 .about-section-area .about-boxarea .about-boxes2 .content-area p {
   color: var(--ztc-text-text-1);
   font-family: var(--ztc-family-font1);
@@ -1031,6 +1043,23 @@ Location:
 }
 .themed-text {
   transition: color 0.3s ease-in-out;
+}
+.team-name {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary); /* lub dziedziczony kolor z tematu */
+  transition: color 0.3s ease;
+}
+
+body.light-mode .team-name {
+  color: #222;
+}
+
+body:not(.light-mode) .team-name {
+  color: #fff;
 }
 
 /* domyślnie – dla ciemnego motywu (brak klasy light-mode) */
