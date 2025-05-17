@@ -945,38 +945,6 @@ Location:
 .animated-logo:hover {
   transform: scale(1.05) rotate(2deg);
 }
-#content-protected-msg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.95);
-  background: rgba(255, 0, 0, 0.85);
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  z-index: 9999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-#content-protected-msg.visible {
-  opacity: 1;
-  animation: pulseProtected 0.6s ease-in-out infinite alternate;
-}
-
-@keyframes pulseProtected {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    box-shadow: 0 0 10px red;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: 0 0 20px red;
-  }
-}
 .magnetic {
   display: inline-block;
   transition: transform 0.2s ease;

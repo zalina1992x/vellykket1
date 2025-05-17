@@ -14,15 +14,6 @@ export class LayoutComponent implements AfterViewInit {
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit(): void {
-    // 🔴 Funkcja blokująca prawy klik
-    document.addEventListener('contextmenu', (e) => {
-      e.preventDefault();
-      const msg = document.getElementById('content-protected-msg');
-      if (msg) {
-        msg.classList.add('visible');
-        setTimeout(() => msg.classList.remove('visible'), 2000);
-      }
-    });
 
     // 🧲 Efekt magnetyczny
     const magnetics = this.el.nativeElement.querySelectorAll('.magnetic');
