@@ -3,6 +3,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { PreviewComponent } from './views/preview/preview.component';
 import { BlogSingleComponent } from './views/blog-single/blog-single.component';
 import { BlogSingle2Component } from './blog-single2/blog-single2.component';
+import { BlogSingle3Component } from './blog-single3/blog-single3.component';
 
 export const routes: Routes = [
   {
@@ -27,5 +28,9 @@ export const routes: Routes = [
   {
     path: 'blog-single2',
     component: BlogSingle2Component
+  },
+  {
+    path: 'blog-single3',
+    component: BlogSingle3Component
   },
 ];

@@ -43,6 +43,12 @@
                             <span>Referanser</span>
                         </a>
                         <a class="list-group-item list-group-item-action"
+                        [ngClass]="{ active: currentSection === 'list-item-9' }" [ngxScrollTo]="'#list-item-9'"
+                        href="javascript:void(0);" (click)="setActiveLink('list-item-9')">
+                        <img src="assets/img/icons/home12.svg" alt="" />
+                        <span>SEO-Verktøy</span>
+                    </a>
+                        <a class="list-group-item list-group-item-action"
                             [ngClass]="{ active: currentSection === 'list-item-7' }" [ngxScrollTo]="'#list-item-7'"
                             href="javascript:void(0);" (click)="setActiveLink('list-item-7')">
                             <img src="assets/img/icons/home8.svg" alt="" />
@@ -621,7 +627,7 @@
       <div class="content-area">
         <ul>
           <li><a href="javascript:void(0);">SEO-tips</a></li>
-          <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 3 min read</a></li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 3 min lesing</a></li>
         </ul>
         <div class="space16"></div>
         <a routerLink="/blog-single">5 enkle SEO-tiltak for en nettside av høy kvalitet</a>
@@ -646,7 +652,7 @@
       <div class="content-area">
         <ul>
           <li><a href="javascript:void(0);">Søkeord</a></li>
-          <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 4 min read</a></li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 4 min lesing</a></li>
         </ul>
         <div class="space16"></div>
         <a routerLink="/blog-single2">Hvordan bruke søkeord effektivt i 2025</a>
@@ -654,12 +660,60 @@
         <ul>
           <li><a href="javascript:void(0);">
             <img src="assets/img/all-images/blog/blog-img5.png" alt="">Vellykket Team</a></li>
-          <li><a href="javascript:void(0);"><i class="fa-regular fa-calendar"></i>Mai 14, 2025</a></li>
+          <li><a href="javascript:void(0);"><i class="fa-regular fa-calendar"></i>Mai 20, 2025</a></li>
         </ul>
       </div>
     </div>
   </div>  
-         
+    <!-- ✅ BLOG POST #3 (ZMIENIONY) -->
+    <div class="col-lg-6 col-md-6">
+        <div class="blog-boxarea">
+          <div class="img1 reveal" appGsapReveal>
+            <a routerLink="/blog-single3">
+              <img src="assets/img/all-images/blog/blog-img9.jpg" alt="">
+            </a>
+          </div>
+          <div class="content-area">
+            <ul>
+              <li><a href="javascript:void(0);">Søkeord</a></li>
+              <li><a href="javascript:void(0);"><i class="fa-regular fa-clock"></i> 4 min lesing</a></li>
+            </ul>
+            <div class="space16"></div>
+            <a routerLink="/blog-single3">Nettside søkemotoroptimalisering – slik blir du synlig på Google</a>
+            <div class="space16"></div>
+            <ul>
+              <li><a href="javascript:void(0);">
+                <img src="assets/img/all-images/blog/blog-img5.png" alt="">Vellykket Team</a></li>
+              <li><a href="javascript:void(0);"><i class="fa-regular fa-calendar"></i>Mai 14, 2025</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+ 
+  
+  
+  <div class="space30"></div>
+  <div class="pagination-area">
+      <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+              <li class="page-item">
+                  <a class="page-link" href="javascript:void(0);" aria-label="Previous">
+                      <i class="fa-solid fa-angle-left"></i>
+                  </a>
+              </li>
+              <li class="page-item"><a class="page-link active"
+                      href="javascript:void(0);">1</a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+              </li>
+            
+              <li class="page-item">
+                  <a class="page-link" href="javascript:void(0);" aria-label="Next">
+                      <i class="fa-solid fa-angle-right"></i>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </div>
 
 
   
