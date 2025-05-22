@@ -8,29 +8,24 @@ import { BlogSingle3Component } from './blog-single3/blog-single3.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'index',
-    pathMatch: 'full',
-  },
-  {
-    path: '',
     component: LayoutComponent,
     loadChildren: () =>
       import('./views/views.route').then((mod) => mod.VIEWS_ROUTE),
   },
   {
     path: 'preview',
-    component: PreviewComponent
+    component: PreviewComponent,
   },
   {
     path: 'blog-single',
-    component: BlogSingleComponent
+    component: BlogSingleComponent,
   },
   {
     path: 'blog-single2',
-    component: BlogSingle2Component
+    component: BlogSingle2Component,
   },
   {
     path: 'blog-single3',
-    component: BlogSingle3Component
+    component: BlogSingle3Component,
   },
 ];
