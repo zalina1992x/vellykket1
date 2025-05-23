@@ -1,21 +1,23 @@
 import { AfterViewInit, Component, ElementRef } from '@angular/core';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { RouterModule } from '@angular/router'; // ✅ poprawnie zaimportowany tylko raz
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [TopbarComponent, SidebarComponent],
+  imports: [
+    TopbarComponent,
+    SidebarComponent,
+    RouterModule // ✅ potrzebne do działania <router-outlet>
+  ],
   templateUrl: './layout.component.html',
   styles: ``
 })
 export class LayoutComponent implements AfterViewInit {
-
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit(): void {
-
-    // 🧲 Efekt magnetyczny
     const magnetics = this.el.nativeElement.querySelectorAll('.magnetic');
     document.addEventListener('mousemove', (e: MouseEvent) => {
       magnetics.forEach((el: HTMLElement) => {
