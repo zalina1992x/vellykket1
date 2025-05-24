@@ -4,6 +4,7 @@ import { PreviewComponent } from './views/preview/preview.component';
 import { BlogSingleComponent } from './views/blog-single/blog-single.component';
 import { BlogSingle2Component } from './blog-single2/blog-single2.component';
 import { BlogSingle3Component } from './blog-single3/blog-single3.component';
+import { BlogSingle4Component } from './blog-single4/blog-single4.component';
 
 export const routes: Routes = [
   {
@@ -28,5 +29,9 @@ export const routes: Routes = [
   {
     path: 'hvordan-bruke-sokeord-i-2025',
     component: BlogSingle3Component,
+  },
+  {
+    path: 'seo-norge-2025',
+    component: BlogSingle4Component,
   }
 ];
