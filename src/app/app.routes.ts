@@ -5,6 +5,7 @@ import { BlogSingleComponent } from './views/blog-single/blog-single.component';
 import { BlogSingle2Component } from './blog-single2/blog-single2.component';
 import { BlogSingle3Component } from './blog-single3/blog-single3.component';
 import { BlogSingle4Component } from './blog-single4/blog-single4.component';
+import { BlogSingle5Component } from './blog-single5/blog-single5.component';
 
 export const routes: Routes = [
   {
@@ -31,7 +32,11 @@ export const routes: Routes = [
     component: BlogSingle3Component,
   },
   {
-    path: 'seo-norge-2025',
+    path: 'effektivt-sokemotoroptimalisering-oslo',
     component: BlogSingle4Component,
+  },
+  {
+    path: 'teknisk-seo-i-2025',
+    component: BlogSingle5Component,
   }
 ];
