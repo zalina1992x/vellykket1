@@ -16,16 +16,17 @@ export const routes: Routes = [
     path: 'preview',
     component: PreviewComponent,
   },
+  // SEO-friendly blog routes:
   {
-    path: 'blog-single',
+    path: 'sokemotoroptimalisering-effektivt-seo-oslo',
     component: BlogSingleComponent,
   },
   {
-    path: 'blog-single2',
+    path: 'seo-nettside-for-bedrifter',
     component: BlogSingle2Component,
   },
   {
-    path: 'blog-single3',
+    path: 'hvordan-bruke-sokeord-i-2025',
     component: BlogSingle3Component,
-  },
+  }
 ];
